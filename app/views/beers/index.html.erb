@@ -1,0 +1,12 @@
+<h1>Beers</h1>
+
+<% @beers.each do |b| %>
+    <p><%= link_to b.name, beer_path(b) %>-<%= b.style%></p>
+    <%= link_to "Delete Beer", delete_beer_path(b), method: :delete %>
+    <%= link_to "Edit Beer", edit_beer_path(b) %>
+<% end %>
+<br>
+<br>
+<%= link_to "Add a Beer!", new_beer_path %>
+
+

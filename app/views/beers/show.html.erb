@@ -1,0 +1,6 @@
+<h1><%= @beer.name %> - <%= @beer.style %></h1>
+<hr>
+<p><%= @beer.brand %></p>
+<p><%= @beer.alcohol %></p>
+
+<%= button_to('My Beers', beers_path, :method => "get") %>

@@ -1,0 +1,17 @@
+<h2>Add a Beer!</h2>
+<hr>
+
+<%= form_tag beers_path %>
+<%= label_tag 'beer[name]', "Name" %>
+<%= text_field_tag 'beer[name]' %>
+<br>
+<%= label_tag 'beer[style]', "Style" %>
+<%= text_field_tag 'beer[style]' %>
+<br>
+<%= label_tag 'beer[brand]', "Brand" %>
+<%= text_field_tag 'beer[brand]' %>
+<br>
+<%= label_tag 'beer[alcohol]', "Alcohol" %>
+<%= text_field_tag 'beer[alcohol]' %>
+<br>
+<%= submit_tag "Submit Beer!" %>
